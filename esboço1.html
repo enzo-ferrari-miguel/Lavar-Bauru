@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAVAR BAURU | Limpeza de Estofados</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: #333;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0d6efd, #083d77);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .logo {
+      width: 180px;
+      background: white;
+      padding: 10px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    /* REDES */
+    .social-buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-social {
+      padding: 12px 24px;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      min-width: 140px;
+    }
+
+    .facebook { background: #1877f2; }
+
+    .instagram {
+      background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+    }
+
+    /* SERVIÇOS */
+    .services {
+      padding: 60px 20px;
+      background: #f0f6ff;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* ANTES E DEPOIS */
+    .before-after {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .ba-item {
+      max-width: 900px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .ba-box {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .ba-box img,
+    .ba-box video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    footer {
+      background: #083d77;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .ba-item {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div>
+    <img src="logo-lavar-bauru.png" class="logo" alt="LAVAR BAURU">
+
+    <h1>LAVAR BAURU</h1>
+    <p>Limpeza de Estofados e Ar Condicionado Split<br>Bauru/SP</p>
+
+    <a class="btn-whatsapp" href="https://wa.me/5514981465703">
+      Falar no WhatsApp
+    </a>
+
+    <div class="social-buttons">
+      <a class="btn-social facebook" href="https://www.facebook.com/lavarbauru" target="_blank">
+        Facebook
+      </a>
+      <a class="btn-social instagram" href="https://www.instagram.com/lavarbauru/" target="_blank">
+        Instagram
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="services">
+  <h2>Nossos Serviços</h2>
+  <div class="cards">
+    <div class="card">🛋️ Sofás</div>
+    <div class="card">🛏️ Colchões</div>
+    <div class="card">🪑 Cadeiras</div>
+    <div class="card">❄️ Ar-condicionado Split</div>
+  </div>
+</section>
+
+<section class="before-after">
+  <h2>Antes e Depois</h2>
+
+  <!-- 1 -->
+  <div class="ba-item">
+    <div class="ba-box"><img src="antes1.jpg"></div>
+    <div class="ba-box"><img src="depois1.jpg"></div>
+  </div>
+
+  <!-- 2 -->
+  <div class="ba-item">
+    <div class="ba-box"><img src="antes2.jpg"></div>
+    <div class="ba-box"><img src="depois2.jpg"></div>
+  </div>
+
+  <!-- 3 -->
+  <div class="ba-item">
+    <div class="ba-box"><img src="antes3.jpg"></div>
+    <div class="ba-box"><img src="depois3.jpg"></div>
+  </div>
+
+  <!-- 4 (vídeo + foto) -->
+  <div class="ba-item">
+    <div class="ba-box">
+      <video src="antes4.mp4" autoplay muted loop playsinline></video>
+    </div>
+       <div class="ba-box">
+      <video src="antes5.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+
+  <!-- 5 (vídeo + vídeo) -->
+  <div class="ba-item">
+
+        <div class="ba-box">
+      <video src="antes6.mp4" autoplay muted loop playsinline></video>
+    </div>
+       <div class="ba-box">
+      <video src="depois6.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+
+
+  <a class="btn-whatsapp" href="https://wa.me/5514981465703">
+    Solicitar Orçamento
+  </a>
+</section>
+
+<footer>
+  © LAVAR BAURU – Bauru/SP
+</footer>
+
+</body>
+</html>
